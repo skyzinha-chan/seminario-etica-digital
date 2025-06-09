@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guia Interativo: Ética e Etiqueta em AVAs</title>
+
+        <!-- CSS Externo -->
+        <link rel="stylesheet" href="css/styles.css">
+
+        <!-- Scripts e Fontes Externas -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="text-gray-800">
+
+        <div class="flex min-h-screen">
+            <!-- Sidebar Navigation -->
+            <aside class="w-64 bg-white/50 backdrop-blur-sm border-r border-gray-200/50 hidden md:block shadow-sm">
+                <div class="p-6">
+                    <h1 class="text-2xl font-bold text-[#3D352E]">Guia do AVA</h1>
+                    <p class="text-sm text-gray-500">Navegação Ética</p>
+                </div>
+                <nav id="main-nav" class="mt-4">
+                    <a href="#inicio" class="nav-item flex items-center p-4 text-gray-600 font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                        </svg>
+                        Início
+                    </a>
+                    <a href="#principios" class="nav-item flex items-center p-4 text-gray-600 font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Princípios Essenciais
+                    </a>
+                    <a href="#comunicacao" class="nav-item flex items-center p-4 text-gray-600 font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z" />
+                            <path
+                                d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h1a2 2 0 002-2V9a2 2 0 00-2-2h-1z" />
+                        </svg>
+                        Comunicação
+                    </a>
+                    <a href="#direitos" class="nav-item flex items-center p-4 text-gray-600 font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 2a1 1 0 00-1 1v1.333a2 2 0 00-1.435-1.295A2 2 0 005 4v12a2 2 0 001.565 1.965A2 2 0 009 16.667V15.333a2 2 0 001.435 1.295A2 2 0 0013 18V6a2 2 0 00-1.565-1.965A2 2 0 009 5.333V4a1 1 0 001-1V2zM7 6v10h1V6H7zm5 0v10h1V6h-1z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Propriedade Intelectual
+                    </a>
+                    <a href="#simulador" class="nav-item flex items-center p-4 text-gray-600 font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Simulador de Decisões
+                    </a>
+                    <a href="#referencias" class="nav-item flex items-center p-4 text-gray-600 font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 2a1 1 0 00-1 1v1.333a2 2 0 00-1.435-1.295A2 2 0 005 4v12a2 2 0 001.565 1.965A2 2 0 009 16.667V15.333a2 2 0 001.435 1.295A2 2 0 0013 18V6a2 2 0 00-1.565-1.965A2 2 0 009 5.333V4a1 1 0 001-1V2zM7 6v10h1V6H7zm5 0v10h1V6h-1z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Referências
+                    </a>
+                    <a href="#checklist" class="nav-item flex items-center p-4 text-gray-600 font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                            <path fill-rule="evenodd"
+                                d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3.707 5.707a1 1 0 00-1.414-1.414L7 11.586 6.293 10.88a1 1 0 10-1.414 1.413l1.5 1.5a1 1 0 001.414 0l3-3z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Checklist Prático
+                    </a>
+                </nav>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="flex-1 p-4 sm:p-6 md:p-10">
+                <!-- Mobile Header & Navigation -->
+                <div class="md:hidden mb-6">
+                    <div class="flex justify-between items-center">
+                        <h1 class="text-2xl font-bold text-[#3D352E]">Guia do AVA</h1>
+                        <button id="mobile-menu-button" class="p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="mobile-menu" class="hidden mt-4 bg-white rounded-lg shadow-md">
+                    </div>
+                </div>
+
+                <!-- Início Section -->
+                <section id="inicio" class="content-section active">
+                    <h2 class="text-3xl font-bold mb-2">Ética e Etiqueta em Ambientes Virtuais</h2>
+                    <p class="text-lg text-gray-600 mb-8">Navegando com Respeito, Responsabilidade e Legalidade no Mundo
+                        Digital.</p>
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <p class="mb-6 text-gray-700">Bem-vindo ao guia interativo para o uso consciente dos Ambientes
+                            Virtuais de Aprendizagem (AVAs). O ambiente virtual é uma extensão da sala de aula e, como
+                            tal,
+                            exige um código de conduta para garantir um aprendizado de qualidade. Esta aplicação foi
+                            desenhada para ajudá-lo a compreender os pilares da cidadania digital de forma prática.</p>
+                        <blockquote class="border-l-4 border-[#A68E7A] pl-4 italic text-gray-600 my-6">
+                            "Como o filósofo <strong>Pierre Lévy</strong>, um dos maiores pensadores da cibercultura,
+                            argumenta, o ciberespaço
+                            não é apenas uma rede de computadores, mas um novo território de convivência humana. E, como
+                            em toda praça ou sala
+                            de aula, esse novo espaço exige seu próprio conjunto de valores e regras para que a
+                            confiança e o respeito
+                            prevaleçam." </blockquote>
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="font-bold text-xl mb-4 text-[#3D352E]">Os Pilares da Cidadania Digital</h3>
+                                <p class="text-gray-600 mb-4">A sua atuação no ambiente digital é sustentada por quatro
+                                    pilares essenciais. O gráfico ao lado ilustra a importância de cada um. Passe o
+                                    mouse
+                                    sobre as seções para saber mais.</p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start"><span class="text-lg mr-2 text-[#A68E7A]">●</span>
+                                        <div><strong class="font-semibold">Ética:</strong> Os princípios morais que
+                                            guiam o
+                                            que é certo e errado, como a honestidade acadêmica.</div>
+                                    </li>
+                                    <li class="flex items-start"><span class="text-lg mr-2 text-[#C4B7A9]">●</span>
+                                        <div><strong class="font-semibold"><abbr
+                                                    title="Conjunto de regras de boas maneiras e comportamento socialmente aceito na internet.">Netiqueta</abbr>:</strong>
+                                            As "boas maneiras" do
+                                            mundo
+                                            online, como a forma de se comunicar em um fórum.</div>
+                                    </li>
+                                    <li class="flex items-start"><span class="text-lg mr-2 text-[#A9998B]">●</span>
+                                        <div><strong class="font-semibold">Respeito:</strong> Valorizar a diversidade de
+                                            opiniões e combater qualquer forma de preconceito.</div>
+                                    </li>
+                                    <li class="flex items-start"><span class="text-lg mr-2 text-[#8C7A6B]">●</span>
+                                        <div><strong class="font-semibold">Legalidade:</strong> Compreender e respeitar
+                                            as
+                                            leis, especialmente sobre direitos autorais e plágio.</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="chart-container">
+                                <canvas id="pillarsChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Princípios Essenciais Section -->
+                <section id="principios" class="content-section">
+                    <h2 class="text-3xl font-bold mb-2">Princípios Essenciais</h2>
+                    <p class="text-lg text-gray-600 mb-8">Construindo sua identidade digital profissional e respeitando
+                        a
+                        diversidade.</p>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+                        <h3 class="font-bold text-xl mb-4 text-[#3D352E]">Comunicação Eficaz: Faça vs. Não Faça</h3>
+                        <p class="text-gray-700 mb-6">A forma como você se comunica constrói sua reputação acadêmica.
+                            Veja
+                            dicas práticas de como se expressar de forma clara e profissional.</p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="border border-green-200 bg-green-50/50 rounded-lg p-4">
+                                <h4 class="font-bold text-lg text-green-800 mb-2">✅ Faça</h4>
+                                <ul class="space-y-2 text-green-700 list-disc list-inside">
+                                    <li>Seja claro, objetivo e respeitoso.</li>
+                                    <li>Use linguagem formal em contextos avaliativos.</li>
+                                    <li>Revise seu texto antes de enviar para evitar mal-entendidos.</li>
+                                    <li>Contribua de forma construtiva para os debates.</li>
+                                </ul>
+                            </div>
+                            <div class="border border-red-200 bg-red-50/50 rounded-lg p-4">
+                                <h4 class="font-bold text-lg text-red-800 mb-2">❌ Não Faça</h4>
+                                <ul class="space-y-2 text-red-700 list-disc list-inside">
+                                    <li>Escrever em CAIXA ALTA (equivale a gritar).</li>
+                                    <li>Usar excesso de gírias e abreviações ("vc", "tbm", "pq").</li>
+                                    <li>Fazer ataques pessoais durante um debate de ideias.</li>
+                                    <li>Compartilhar informações sem checar a veracidade.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h3 class="font-bold text-xl mb-4 text-[#3D352E]">Respeito à Diversidade e Inclusão</h3>
+                        <p class="text-gray-700 mb-4">O ambiente de aprendizado é rico porque é diverso. Valorizar as
+                            diferentes opiniões,
+                            culturas e origens é fundamental. Lembre-se que discursos de ódio e cyberbullying são
+                            inaceitáveis.</p>
+                        <p class="text-gray-700">Além disso, o respeito se manifesta na **acessibilidade digital**.
+                            Garantir que colegas com
+                            deficiência possam acessar o conteúdo é uma responsabilidade ética. Práticas simples
+                            incluem:</p>
+                        <ul class="mt-4 space-y-2 list-disc list-inside text-gray-600">
+                            <li>Usar texto alternativo (alt text) em imagens para descrevê-las a leitores de tela.</li>
+                            <li>Fornecer legendas em vídeos.</li>
+                            <li>Utilizar cores com contraste adequado para facilitar a leitura.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Comunicação Section -->
+                <section id="comunicacao" class="content-section">
+                    <h2 class="text-3xl font-bold mb-2">Comunicação Interativa</h2>
+                    <p class="text-lg text-gray-600 mb-8">Praticando o diálogo construtivo e a responsabilidade digital.
+                    </p>
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+                        <h3 class="font-bold text-xl mb-4 text-[#3D352E]">Debatendo Ideias, Não Pessoas</h3>
+                        <p class="mb-4 text-gray-700">Em um fórum de discussão, o objetivo é o crescimento coletivo. A
+                            forma
+                            como você apresenta seus argumentos faz toda a diferença. </p>
+                        <blockquote class="border-l-4 border-[#A68E7A] pl-4 italic text-gray-600 mb-6">
+                            "Essas regras de comunicação formam o que chamamos de 'Netiqueta'. Uma das pioneiras nesse
+                            assunto, <strong>Virginia
+                                Shea</strong>, estabeleceu uma regra de ouro que continua perfeitamente válida hoje:
+                            <strong>Lembre-se do
+                                Humano</strong>. Atrás de cada tela, existe uma pessoa com sentimentos e que merece
+                            respeito."
+                        </blockquote>
+                        <p>Veja um exemplo prático:</p>
+                        <div id="debate-example"
+                            class="border-l-4 border-red-400 p-4 bg-red-50/50 rounded-r-lg cursor-pointer">
+                            <p class="font-semibold text-red-800">Postura Inadequada:</p>
+                            <p class="text-red-700">"Sua ideia não faz o menor sentido. Claramente você não leu o
+                                material
+                                direito."</p>
+                            <small class="text-gray-500 block mt-2">(Clique para ver a abordagem correta)</small>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h3 class="font-bold text-xl mb-4 text-[#3D352E]">O Poder (e o Perigo) do "Print"</h3>
+                        <p class="text-gray-700">Lembre-se: o que vai para a rede, fica na rede. Tenha consciência de
+                            que
+                            tudo pode ser salvo e compartilhado. A confiança é a moeda mais valiosa no ambiente virtual.
+                        </p>
+                        <ul class="mt-4 space-y-2 list-disc list-inside text-gray-600">
+                            <li>Não compartilhe informações ou conversas privadas de colegas sem permissão explícita.
+                            </li>
+                            <li>Respeite a privacidade alheia como gostaria que a sua fosse respeitada.</li>
+                            <li>Quebrar a confiança prejudica a segurança e a colaboração de todo o grupo.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Direitos Autorais Section -->
+                <section id="direitos" class="content-section">
+                    <h2 class="text-3xl font-bold mb-2">Propriedade Intelectual e Quiz</h2>
+                    <p class="text-lg text-gray-600 mb-8">Usando conteúdos de forma ética e testando seu conhecimento.
+                    </p>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+                        <h3 class="font-bold text-xl mb-4 text-[#3D352E]">Plágio: Apropriação Indevida de Ideias</h3>
+                        <p class="mb-4 text-gray-700">Plagiar é apresentar o trabalho de outra pessoa como se fosse seu.
+                            É uma falta
+                            ética grave com sérias consequências acadêmicas. A chave para evitar é simples:
+                            <strong>sempre dê o crédito
+                                ao autor original.</strong>
+                        </p>
+                        <blockquote class="border-l-4 border-[#A68E7A] pl-4 italic text-gray-600 my-6">
+                            "Quando falamos de usar imagens ou textos da internet, entramos na questão dos direitos
+                            autorais. O advogado
+                            <strong>Lawrence Lessig</strong>, criador do <a href="https://creativecommons.org.br/"
+                                target="_blank" class="text-blue-600 hover:underline"><strong>Creative
+                                    Commons</strong></a>, nos lembra
+                            que a cultura digital
+                            floresce no compartilhamento, mas um compartilhamento ético, onde damos o devido crédito.
+                            Ferramentas como as
+                            licenças Creative Commons são a aplicação prática dessa ideia."
+                        </blockquote>
+                        <div class="border-t pt-4">
+                            <p class="font-semibold mb-2">Fluxo para Evitar o Plágio:</p>
+                            <div class="text-center p-4 bg-gray-50 rounded-lg">
+                                <div class="font-mono text-gray-700">
+                                    <p class="p-2 bg-blue-100 rounded-md inline-block">A ideia/texto é sua?</p>
+                                    <div class="flex justify-center my-2">
+                                        <div class="w-px bg-gray-300 h-6"></div>
+                                    </div>
+                                    <div class="flex justify-around">
+                                        <div class="text-center">
+                                            <p class="font-sans text-green-600">↓ Sim</p>
+                                            <p class="p-2 bg-green-100 rounded-md inline-block mt-2">Pode usar!</p>
+                                        </div>
+                                        <div class="text-center">
+                                            <p class="font-sans text-red-600">↓ Não</p>
+                                            <p class="p-2 bg-red-100 rounded-md inline-block mt-2"><strong>CITE A
+                                                    FONTE!</strong></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-4 text-sm text-gray-600">Lembre-se: parafrasear (escrever com suas palavras)
+                                também exige que
+                                você cite a fonte original da ideia.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h3 class="font-bold text-xl mb-4 text-[#3D352E]">Teste seu Conhecimento</h3>
+
+                        <div class="quiz-question-block mb-8">
+                            <p class="mb-4 text-gray-700 font-semibold">1. Cenário: Joana encontrou um infográfico
+                                perfeito para seu
+                                trabalho. O que ela deve fazer?</p>
+                            <div class="space-y-3">
+                                <div data-correct="false"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    a) Copiar e
+                                    colar. Afinal, estava na internet.</div>
+                                <div data-correct="true"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    b) Tentar
+                                    encontrar o autor para citar a fonte corretamente abaixo da imagem.</div>
+                                <div data-correct="false"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    c) Não usar a
+                                    imagem para não ter problemas.</div>
+                            </div>
+                            <p class="quiz-feedback mt-4 font-semibold hidden"></p>
+                        </div>
+
+                        <div class="quiz-question-block mb-8">
+                            <p class="mb-4 text-gray-700 font-semibold">2. Cenário: Em um fórum de debate, um colega
+                                escreve uma
+                                mensagem inteira em CAIXA ALTA para enfatizar um ponto.</p>
+                            <div class="space-y-3">
+                                <div data-correct="false"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    a) Isso é
+                                    aceitável, pois demonstra a paixão pelo assunto.</div>
+                                <div data-correct="true"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    b) Isso é
+                                    considerado o equivalente a "gritar" e pode ser visto como agressivo ou rude.</div>
+                                <div data-correct="false"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    c) Isso
+                                    facilita a leitura da mensagem.</div>
+                            </div>
+                            <p class="quiz-feedback mt-4 font-semibold hidden"></p>
+                        </div>
+
+                        <div class="quiz-question-block">
+                            <p class="mb-4 text-gray-700 font-semibold">3. Cenário: Dois colegas têm uma conversa
+                                privada no chat sobre
+                                uma dúvida do trabalho. Um deles tira um 'print' e posta no grupo geral da turma.</p>
+                            <div class="space-y-3">
+                                <div data-correct="false"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    a) Não há
+                                    problema, pois a dúvida pode ser a mesma de outros.</div>
+                                <div data-correct="true"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    b) É uma
+                                    quebra de confiança e violação de privacidade, pois a conversa era privada.</div>
+                                <div data-correct="false"
+                                    class="quiz-option border p-3 rounded-lg hover:bg-gray-100 cursor-pointer transition">
+                                    c) É uma forma
+                                    eficiente de compartilhar conhecimento.</div>
+                            </div>
+                            <p class="quiz-feedback mt-4 font-semibold hidden"></p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Ferramentas e Políticas Institucionais Section -->
+                <section id="ferramentas" class="content-section">
+                    <h2 class="text-3xl font-bold mb-2">Ferramentas e Políticas Institucionais</h2>
+                    <p class="text-lg text-gray-600 mb-8">Recursos práticos e a seriedade do tema no ambiente acadêmico.
+                    </p>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6 mb-8">
+                        <h3 class="font-bold text-xl mb-4 text-[#3D352E]">Ferramentas de Verificação e Boas Práticas
+                        </h3>
+                        <p class="mb-4 text-gray-700">Existem ferramentas que podem auxiliar na verificação de plágio e
+                            no uso correto
+                            de imagens:</p>
+                        <ul class="space-y-2 list-disc list-inside text-gray-700">
+                            <li><strong>Verificadores de Plágio:</strong> Ferramentas como Copyscape, Plagium ou o
+                                próprio Turnitin
+                                (usado por muitas instituições) ajudam a identificar trechos de texto copiados.</li>
+                            <li><strong>Busca de Imagens com Licença Livre:</strong> Ao usar o Google Imagens, utilize o
+                                filtro
+                                "Ferramentas" > "Direitos de uso" e selecione "Licenças Creative Commons" para encontrar
+                                imagens que
+                                você pode usar com mais segurança, sempre verificando a licença específica.</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <h3 class="font-bold text-xl mb-4 text-[#3D352E]">Casos Reais e a Política Institucional</h3>
+                        <p class="text-gray-700">A má conduta digital não é um problema abstrato. Casos de plágio em
+                            teses ou trabalhos
+                            levaram a consequências sérias, como a perda de títulos acadêmicos e processos judiciais. É
+                            fundamental que
+                            cada estudante consulte o **Código de Conduta e Ética da nossa instituição ([Nome da
+                            Instituição])**, que
+                            detalha as penalidades para o plágio, que vão desde a reprovação na disciplina até o
+                            desligamento do curso.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Simulador de Decisões Éticas -->
+                <section id="simulador" class="content-section">
+                    <h2 class="text-3xl font-bold mb-2">Simulador de Decisões Éticas</h2>
+                    <p class="text-lg text-gray-600 mb-8">Teste seu julgamento em cenários complexos do dia a dia
+                        acadêmico.</p>
+
+                    <div class="mb-8 p-4 bg-white rounded-xl shadow-sm flex justify-center">
+                        <img src="assets/Gemini_Generated_Image_9arsu39arsu39ars.png"
+                            alt="Ilustração de estudantes enfrentando um dilema ético em frente a um computador."
+                            class="rounded-lg max-w-full md:max-w-sm mx-auto">
+                    </div>
+
+                    <div class="simulador-block bg-white rounded-xl shadow-sm p-6 mb-8">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">🚨</span>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2 text-[#3D352E]">Dilema: O Comentário Ofensivo</h3>
+                                <p class="mb-4 text-gray-700">Em um grupo de trabalho fechado no WhatsApp, um integrante
+                                    faz uma piada
+                                    de mau gosto com conotação preconceituosa sobre outro colega de turma, que não está
+                                    no grupo. O que
+                                    você faz?</p>
+                            </div>
+                        </div>
+
+                        <div class="choices-container mt-4 grid sm:grid-cols-1 md:grid-cols-3 gap-4">
+                            <button
+                                data-consequence="<h4 class='font-bold text-orange-800'>Resultado: Omissão</h4><p class='text-gray-700'>Você evitou o conflito imediato, mas sua omissão pode ser interpretada como conivência. A cultura de desrespeito no grupo se fortalece e a vítima continua sem saber do ocorrido, o que corrói a confiança geral.</p>"
+                                class="choice-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">a)
+                                Ignorar a piada.</button>
+                            <button
+                                data-consequence="<h4 class='font-bold text-blue-800'>Resultado: Exposição com Risco</h4><p class='text-gray-700'>Você alertou a vítima, o que é um ato de lealdade. No entanto, o 'print' é uma quebra da privacidade do grupo e pode gerar um conflito ainda maior, expondo você e transformando o problema em uma briga pública sem resolver a causa raiz.</p>"
+                                class="choice-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">b)
+                                Tirar 'print' e enviar para a vítima.</button>
+                            <button
+                                data-consequence="<h4 class='font-bold text-green-800'>Resultado: Diálogo Construtivo</h4><p class='text-gray-700'>Esta é a atitude mais ética e madura. Você confronta o comportamento inadequado na sua origem, educa o colega e protege o ambiente do grupo. Você age como um agente de mudança positiva, mesmo que isso exija coragem.</p>"
+                                class="choice-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">c)
+                                Chamar a atenção no grupo.</button>
+                        </div>
+                        <div class="result-container mt-4 p-4 rounded-lg hidden"></div>
+                    </div>
+
+                    <div class="simulador-block bg-white rounded-xl shadow-sm p-6">
+                        <div class="flex items-start">
+                            <span class="text-3xl mr-4">🤔</span>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2 text-[#3D352E]">Dilema: A Fonte Duvidosa</h3>
+                                <p class="mb-4 text-gray-700">Você está finalizando seu TCC e encontra um artigo em um
+                                    blog anônimo que
+                                    se encaixa perfeitamente na sua argumentação. O problema: o artigo não cita nenhuma
+                                    fonte
+                                    científica. O que você faz?</p>
+                            </div>
+                        </div>
+                        <div class="choices-container mt-4 grid sm:grid-cols-1 md:grid-cols-3 gap-4">
+                            <button
+                                data-consequence="<h4 class='font-bold text-orange-800'>Resultado: Risco à Credibilidade</h4><p class='text-gray-700'>Você foi honesto ao citar a fonte, mas usar uma fonte não confiável pode enfraquecer a credibilidade de todo o seu argumento. A banca examinadora pode questionar o rigor da sua pesquisa.</p>"
+                                class="choice-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">a)
+                                Usar a informação citando o blog.</button>
+                            <button
+                                data-consequence="<h4 class='font-bold text-red-800'>Resultado: Plágio Conceitual</h4><p class='text-gray-700'>Esta é a pior opção. Usar a ideia de outra pessoa como se fosse sua é plágio, mesmo que a fonte original seja 'difícil de rastrear'. Isso representa uma grave falta de integridade acadêmica e pode levar a sanções severas.</p>"
+                                class="choice-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">b)
+                                Usar a informação como se fosse sua.</button>
+                            <button
+                                data-consequence="<h4 class='font-bold text-green-800'>Resultado: Integridade Acadêmica</h4><p class='text-gray-700'>Esta é a atitude correta e mais profissional. A integridade da sua pesquisa é mais importante que a conveniência. O esforço extra para validar a informação com fontes confiáveis fortalece seu trabalho e demonstra seu compromisso com a ética acadêmica.</p>"
+                                class="choice-button bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded transition">c)
+                                Descartar e buscar fontes acadêmicas.</button>
+                        </div>
+                        <div class="result-container mt-4 p-4 rounded-lg hidden"></div>
+                    </div>
+                </section>
+
+                <!-- Referências Section -->
+                <section id="referencias" class="content-section">
+                    <h2 class="text-3xl font-bold mb-2">Referências e Leituras</h2>
+                    <p class="text-lg text-gray-600 mb-8">Autores que fundamentam a discussão sobre ética digital.</p>
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <ul class="space-y-4 list-disc list-inside text-gray-700">
+                            <li><strong>Pierre Lévy:</strong> Explorou o conceito de "ciberespaço" como um novo meio
+                                social e de
+                                conhecimento em obras como "Cibercultura".</li>
+                            <li><strong>Virginia Shea:</strong> Pioneira na definição das regras de "Netiqueta", a
+                                etiqueta da internet.
+                            </li>
+                            <li><strong>Lawrence Lessig:</strong> Fundador do Creative Commons e um dos principais
+                                defensores de uma
+                                cultura digital mais livre e justa, como visto em seu livro "Cultura Livre".</li>
+                            <li><strong>Lei nº 9.610/98:</strong> A Lei de Direitos Autorais que rege a propriedade
+                                intelectual no
+                                Brasil.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Checklist Section -->
+                <section id="checklist" class="content-section">
+                    <h2 class="text-3xl font-bold mb-2">Checklist do Cidadão Digital</h2>
+                    <p class="text-lg text-gray-600 mb-8">Um resumo prático para incorporar no seu dia a dia.</p>
+                    <div class="bg-white rounded-xl shadow-sm p-6">
+                        <p class="mb-6 text-gray-700">Use esta lista para verificar suas ações e garantir que você está
+                            contribuindo para um ambiente de aprendizado positivo, ético e seguro para todos. Clique nos
+                            itens para marcá-los.</p>
+                        <div class="space-y-4">
+                            <label
+                                class="checklist-item flex items-center p-4 border rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox"
+                                    class="h-5 w-5 rounded border-gray-300 text-[#A68E7A] focus:ring-[#A68E7A]/50">
+                                <span class="ml-4 text-gray-700">**Pensei antes de postar?** Lembrei que o ambiente é
+                                    formal
+                                    e o conteúdo é permanente.</span>
+                            </label>
+                            <label
+                                class="checklist-item flex items-center p-4 border rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox"
+                                    class="h-5 w-5 rounded border-gray-300 text-[#A68E7A] focus:ring-[#A68E7A]/50">
+                                <span class="ml-4 text-gray-700">**Minha comunicação foi clara e respeitosa?** Evitei
+                                    gírias, CAIXA ALTA e revisei o texto.</span>
+                            </label>
+                            <label
+                                class="checklist-item flex items-center p-4 border rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox"
+                                    class="h-5 w-5 rounded border-gray-300 text-[#A68E7A] focus:ring-[#A68E7A]/50">
+                                <span class="ml-4 text-gray-700">**Respeitei a diversidade?** Debati ideias de forma
+                                    construtiva, sem ataques pessoais.</span>
+                            </label>
+                            <label
+                                class="checklist-item flex items-center p-4 border rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox"
+                                    class="h-5 w-5 rounded border-gray-300 text-[#A68E7A] focus:ring-[#A68E7A]/50">
+                                <span class="ml-4 text-gray-700">**Dei o devido crédito?** Citei todas as fontes e não
+                                    cometi plágio.</span>
+                            </label>
+                            <label
+                                class="checklist-item flex items-center p-4 border rounded-lg hover:bg-gray-50 cursor-pointer transition">
+                                <input type="checkbox"
+                                    class="h-5 w-5 rounded border-gray-300 text-[#A68E7A] focus:ring-[#A68E7A]/50">
+                                <span class="ml-4 text-gray-700">**Protegi a privacidade?** Não compartilhei informações
+                                    de
+                                    outros sem permissão.</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <!-- JavaScript Externo -->
+        <script src="js/scripts.js"></script>
+    </body>
+
+</html>
