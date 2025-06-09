@@ -2,12 +2,12 @@
 
 <p align="center">
   <img alt="Status do Projeto" src="https://img.shields.io/badge/status-concluído-brightgreen">
-  <img alt="Último Commit" src="https://img.shields.io/github/last-commit/SEU-USUARIO/SEU-REPOSITORIO">
-  <img alt="Licença" src="https://img.shields.io/github/license/SEU-USUARIO/SEU-REPOSITORIO">
+  <img alt="Último Commit" src="https://img.shields.io/github/last-commit/skyzinha-chan/seminario-etica-digital">
+  <img alt="Licença" src="https://img.shields.io/github/license/skyzinha-chan/seminario-etica-digital">
 </p>
 
 
-Este projeto foi desenvolvido como parte da avaliação da disciplina **[Nome da Disciplina]** do curso de **[Nome do Curso]** da **[Nome da Instituição]**. O objetivo foi criar não apenas uma apresentação, mas um recurso de aprendizado completo e interativo sobre a conduta ética no ambiente digital acadêmico.
+Este projeto foi desenvolvido como parte da avaliação da disciplina **Educação à Distância e Ambientes Virtuais de Aprendizagem** do curso de **Licenciatura em Computação** da **Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul**. O objetivo foi criar não apenas uma apresentação, mas um recurso de aprendizado completo e interativo sobre a conduta ética no ambiente digital acadêmico.
 
 ---
 
@@ -24,7 +24,7 @@ Este projeto está dividido em duas partes principais:
 
 O guia interativo, desenvolvido em HTML, CSS e JavaScript, está disponível online e pode ser acessado através do link abaixo.
 
-**[Acesse o Guia Interativo aqui](https://SEU-USUARIO.github.io/SEU-REPOSITORIO/)**
+**[Acesse o Guia Interativo aqui](https://skyzinha-chan.github.io/seminario-etica-digital/)**
 
 ---
 
@@ -36,10 +36,9 @@ Os slides abaixo serviram como âncora visual para os principais tópicos da apr
 
 |                 Slide 1: Fundamentos da Ética                  |                     Slide 2: Ética Online                      |                 Slide 3: Integridade Acadêmica                 |
 | :------------------------------------------------------------: | :------------------------------------------------------------: | :------------------------------------------------------------: |
-| [![Slide 1](URL_DO_PRINT_DO_SLIDE_1)](URL_DO_PRINT_DO_SLIDE_1) | [![Slide 2](URL_DO_PRINT_DO_SLIDE_2)](URL_DO_PRINT_DO_SLIDE_2) | [![Slide 3](URL_DO_PRINT_DO_SLIDE_3)](URL_DO_PRINT_DO_SLIDE_3) |
+| [![Slide 1](https://github.com/skyzinha-chan/seminario-etica-digital/blob/main/assets/SLIDE1.png?raw=true)](https://github.com/skyzinha-chan/seminario-etica-digital/blob/main/assets/SLIDE1.png?raw=true) | [![Slide 2](https://github.com/skyzinha-chan/seminario-etica-digital/blob/main/assets/SLIDE2.png?raw=true)](https://github.com/skyzinha-chan/seminario-etica-digital/blob/main/assets/SLIDE2.png?raw=true) | [![Slide 3](https://github.com/skyzinha-chan/seminario-etica-digital/blob/main/assets/SLIDE3.png?raw=true)](https://github.com/skyzinha-chan/seminario-etica-digital/blob/main/assets/SLIDE3.png?raw=true) |
 
-
-**[Clique aqui para baixar a apresentação completa em PDF](LINK_PARA_O_ARQUIVO_PDF_NO_REPOSITORIO)**
+**[Clique aqui para baixar a apresentação completa em PDF](https://github.com/skyzinha-chan/seminario-etica-digital/raw/main/assets/SEMIN%C3%81RIO.pdf)**
 
 
 ---
